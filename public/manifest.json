@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Froothies",
+  "name": "Fresh Fruits and Smoothies",
+  "keywords": "fresh, fruits, smoothies, cocktail",
+  "author": "Louis Nguyen",
   "icons": [
     {
       "src": "favicon.ico",
