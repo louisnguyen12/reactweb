@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+#taskbar-nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+#taskbar-nav form {
+    display: flex;
+    width: 60%;
+}
+
+#taskbar-nav input {
+    width:80%;
+    max-height:45px;
+    min-width: 300px;
+}
+
+#taskbar-nav button {
+    width:40%;
+    max-height:45px;
+    min-width: 170px;
+}
+
+#taskbar-nav ul {
+    display: flex;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+
+#taskbar-nav a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#taskbar-nav li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#certificate ul {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#certificate li {
+    padding: 0 20px 0 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+}
+
+.slideshow {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+

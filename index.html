@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    12L          ,ou12ou,     12L    12L   12LOUIS    ,oOUISou,
+    12L         lo      lo    12L    12L     12L      lou    12
+    12L         lo      lo    12L    12L     12L        ou
+    12L         lo      lo    12L    12L     12L          ou
+    12L         lo      lo    12L    12L     12L            ou
+    12L         lo      lo    12L    12L     12L      12     ou
+    12LOUIS12    'lu12ol'      'LOUIS1'    12LOUIS      lou12'   
+    
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Building Froothies">
+    <meta name="keywords" content="fresh fruit, smoothies, cocktail, coffee">
+    <meta name="author" content="Louis Nguyen">
+    <title>Pikart | Home</title>
+    <link rel="icon" type="image/png" href="img/arrested.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <div class="nes-container">
+            <div id="taskbar-nav" class="container">
+                
+                    <a href="index.html">Pikart</a>
+                    <form action="./components/search.html">
+                        <input class="nes-input" type="text" placeholder="Find your poster.."
+                            name="search">
+                        <button type="submit" class="nes-btn is-primary"><img style="width:32px; height: 32px"
+                                src="img/zoom.svg"> Search</button>
+                    </form>
+                    <ul>
+                        <li><a href="./components/login.html"><strong>Login</strong></a></li>
+                        <li><a href="./components/cart.html"><strong>Cart</strong><img style="width:32px; height: 32px;padding-bottom: 10px;" src="img/cart.svg"></a></li>
+                    </ul>
+                
+            </div>
+
+            <div id="certificate" class="container">
+                <ul>
+                    <li>High Resolution</li>
+                    <li>Top Quality Paper</li>
+                    <li>Unique Style</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="product-nav">
+        <div class="container">
+            <ul class="nes-container is-rounded">
+                <li>
+                    <a>Factual</a>
+                </li>
+                <li>
+                    <a>Movement</a>
+
+                </li>
+                <li>
+                    <a>Pop Culture</a>
+
+                </li>
+                <li>
+                    <a>Gaming</a>
+                </li>
+                <li>
+                    <a>Celebrity</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="slideshow-nav">
+        <div class="nes-container slideshow-container container">
+
+            <div class="slideshow">
+                <img src="./img/slideshow/bilgewater.jpg" style="width: 100%">
+            </div>
+            <div class="slideshow">
+                <img src="./img/slideshow/ionia.jpg" style="width: 100%">
+            </div>
+            <div class="slideshow">
+                <img src="./img/slideshow/zaun.jpg" style="width: 100%">
+            </div>
+            <!-- Next & Previous buttons -->
+            <a class="prev" style="color: white" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" style="color: white" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Dots controller -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <script src="./js/slideshow.js"></script>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <div class="nes-container is-rounded">
+
+            </div>
+            <div class="nes-container is-rounded">
+
+            </div>
+            <div class="nes-container is-rounded">
+
+            </div>
+            <div class="nes-container is-rounded">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="hotdeals">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="trending">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email" class="nes-input" placeholder="Enter email">
+                <button type="submit" class="nes-btn is-error">Subsribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="copyright">
+                <p>Pikart, Copyright &copy; 2019</p>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita
+                        Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
+                    licensed
+                    by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                        target="_blank">CC
+                        3.0 BY</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
