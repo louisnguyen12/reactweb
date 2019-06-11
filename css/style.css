@@ -18,10 +18,15 @@ ul {
     padding: 0;
 }
 
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* Header */
 
 header {
-    padding-top: 30px;
+    padding-top: 40px;
     min-height: 70px;
 }
 
@@ -58,18 +63,20 @@ header {
     color: #000;
     text-decoration: none;
     margin-right: 20px;
+    margin-left: 40px;
 }
 
 #taskbar-nav li {
     list-style-type: none;
     text-align: center;
+    line-height: 2.5;
 }
 
 #certificate ul {
     margin-top: 1rem;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #certificate li {
@@ -78,10 +85,17 @@ header {
     text-align: center;
 }
 
+/* Product Navigation */
+
+#product-nav {
+    display: flex;
+    justify-content: center;
+}
+
 /* Slideshow */
 
-.slideshow-container {
-    max-width: 1000px;
+aside#slideshow-nav .nes-container {
+    max-width: 1200px;
     position: relative;
 }
 
@@ -103,7 +117,7 @@ header {
 }
 
 .next {
-    right: 0;
+    right: 25px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -121,3 +135,56 @@ header {
     background-color: #717171;
 }
 
+/* Events */
+#events .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#events .nes-container {
+    max-width: 400px;
+}
+
+#events img {
+    max-width: 259px;
+    max-height: 150px;
+}
+
+/* Hot Deals */
+#hotdeals {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Trending */
+#trending {
+    display: flex;
+    justify-content: center;
+}
+
+/* Newsletter */
+#newsletter {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter .nes-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+#newsletter h3 {
+    padding-left: 100px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter form input {
+    width: 50%;
+}

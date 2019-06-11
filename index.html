@@ -26,21 +26,21 @@
 
 <body>
     <header>
-        <div class="nes-container">
-            <div id="taskbar-nav" class="container">
-                
-                    <a href="index.html">Pikart</a>
-                    <form action="./components/search.html">
-                        <input class="nes-input" type="text" placeholder="Find your poster.."
-                            name="search">
-                        <button type="submit" class="nes-btn is-primary"><img style="width:32px; height: 32px"
-                                src="img/zoom.svg"> Search</button>
-                    </form>
-                    <ul>
-                        <li><a href="./components/login.html"><strong>Login</strong></a></li>
-                        <li><a href="./components/cart.html"><strong>Cart</strong><img style="width:32px; height: 32px;padding-bottom: 10px;" src="img/cart.svg"></a></li>
-                    </ul>
-                
+        <div class="container">
+            <div id="taskbar-nav">
+                <a href="index.html"><span style="color: red">P</span><span style="color: green">i</span><span
+                        style="color: blue">k</span><span style="color: #9c9c9c">art</span></a>
+                <form action="./components/search.html">
+                    <input class="nes-input" type="text" placeholder="Find your poster.." name="search">
+                    <button type="submit" class="nes-btn is-primary"><img style="width:32px; height: 32px"
+                            src="img/zoom.svg"> Search</button>
+                </form>
+                <ul>
+                    <li><a href="./components/login.html"><strong>Login</strong></a></li>
+                    <li><a href="./components/cart.html"><strong>Cart</strong><img
+                                style="width:32px; height: 32px;padding-bottom: 10px;" src="img/cart.svg"></a></li>
+                </ul>
+
             </div>
 
             <div id="certificate" class="container">
@@ -54,86 +54,101 @@
     </header>
 
     <section id="product-nav">
-        <div class="container">
-            <ul class="nes-container is-rounded">
+        <div class="nes-container is-rounded">
+            <ul class="nes-list is-disc">
                 <li>
                     <a>Factual</a>
                 </li>
+                <br>
                 <li>
                     <a>Movement</a>
 
                 </li>
+                <br>
                 <li>
                     <a>Pop Culture</a>
 
                 </li>
+                <br>
                 <li>
                     <a>Gaming</a>
                 </li>
+                <br>
                 <li>
                     <a>Celebrity</a>
                 </li>
             </ul>
         </div>
-    </section>
 
-    <section id="slideshow-nav">
-        <div class="nes-container slideshow-container container">
+        <aside id="slideshow-nav">
+            <div class="nes-container is-rounded">
 
-            <div class="slideshow">
-                <img src="./img/slideshow/bilgewater.jpg" style="width: 100%">
+                <div class="slideshow">
+                    <img src="./img/slideshow/bilgewater.jpg" style="width: 100%">
+                </div>
+                <div class="slideshow">
+                    <img src="./img/slideshow/ionia.jpg" style="width: 100%">
+                </div>
+                <div class="slideshow">
+                    <img src="./img/slideshow/zaun.jpg" style="width: 100%">
+                </div>
+                <!-- Next & Previous buttons -->
+                <a class="prev" style="color: white" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" style="color: white" onclick="plusSlides(1)">&#10095;</a>
+                <!-- Dots controller -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
-            <div class="slideshow">
-                <img src="./img/slideshow/ionia.jpg" style="width: 100%">
-            </div>
-            <div class="slideshow">
-                <img src="./img/slideshow/zaun.jpg" style="width: 100%">
-            </div>
-            <!-- Next & Previous buttons -->
-            <a class="prev" style="color: white" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" style="color: white" onclick="plusSlides(1)">&#10095;</a>
-            <!-- Dots controller -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </div>
-        <script src="./js/slideshow.js"></script>
+            <script src="./js/slideshow.js"></script>
+        </aside>
     </section>
 
     <section id="events">
         <div class="container">
-            <div class="nes-container is-rounded">
-
+            <div>
+                <a href="components/flashsales.html" title="Grand Open Deals">
+                    <img src="img/events/8a12ce2d96f23acae7133875fca5af9a.png" alt="Flash Sales">
+                </a>
             </div>
-            <div class="nes-container is-rounded">
-
+            <div>
+                <a href="components/weekdeals.html" title="Weekly Sales">
+                    <img src="img/events/a7990f3f1608bdb004cc3b42bb810294.png" alt="Weekly Sales">
+                </a>
             </div>
-            <div class="nes-container is-rounded">
-
+            <div>
+                <a href="components/picks.html" title="Editor's Picks">
+                    <img src="img/events/cb5ff5f9e2fcb213f3f0d322a764073e.png" alt="Editor Picks">
+                </a>
             </div>
-            <div class="nes-container is-rounded">
-
+            <div>
+                <a title="Buy One Get One Free">
+                    <img src="img/events/ff94c84be9f78b091e5cde2fa5f5b8f5.png" alt="Promo">
+                </a>
             </div>
         </div>
     </section>
 
     <section id="hotdeals">
-        <div class="container">
-
+        <div class="nes-container with-title is-rounded">
+            <p class="title">Hot Deals</p>
         </div>
     </section>
 
-    <section id="trending">
-        <div class="container">
-
+    <section>
+        <div class="nes-container with-title is-rounded">
+            <p class="title">Trending</p>
+            <div id="trending">
+                
+            </div>
         </div>
     </section>
 
     <section id="newsletter">
-        <div class="container">
-            <h1>Subscribe To Our Newsletter</h1>
+        <div class="nes-container is-rounded">
+            <h3>Subscribe To Our Newsletter</h3>
             <form>
                 <input type="email" class="nes-input" placeholder="Enter email">
                 <button type="submit" class="nes-btn is-error">Subsribe</button>
@@ -145,15 +160,12 @@
         <div class="container">
             <div id="copyright">
                 <p>Pikart, Copyright &copy; 2019</p>
-                <p>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita
-                        Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
-                    licensed
-                    by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                        target="_blank">CC
-                        3.0 BY</a></p>
+                
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 </body>
 
 </html>
